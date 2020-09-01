@@ -1,0 +1,150 @@
+.flyout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+//> SNEK Design
+// Buttons
+.btn {
+  box-shadow: none;
+  border-radius: 0;
+  text-transform: initial;
+  &:hover {
+    box-shadow: none;
+  }
+  &:active {
+    box-shadow: none;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &:visited {
+    box-shadow: none;
+  }
+
+  // Button types
+  &.btn-green {
+    background-color: #77bd43 !important;
+    &:hover {
+      background-color: darken(#77bd43, 5%) !important;
+    }
+  }
+}
+//> Cards
+.card {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+// Custom colors
+.snek-dark {
+  background-color: $snekDark !important;
+  &.darken-1 {
+    background-color: darken($snekDark, 5%) !important;
+  }
+  &.darken-2 {
+    background-color: darken($snekDark, 10%) !important;
+  }
+  &.darken-3 {
+    background-color: darken($snekDark, 15%) !important;
+  }
+  &.lighten-1 {
+    background-color: lighten($snekDark, 10%) !important;
+  }
+  &.lighten-2 {
+    background-color: lighten($snekDark, 20%) !important;
+  }
+  &.lighten-3 {
+    background-color: lighten($snekDark, 30%) !important;
+  }
+}
+.snek-blue {
+  background-color: $snekBlue !important;
+  &.darken-1 {
+    background-color: darken($snekBlue, 10%) !important;
+  }
+  &.darken-2 {
+    background-color: darken($snekBlue, 20%) !important;
+  }
+  &.darken-3 {
+    background-color: darken($snekBlue, 30%) !important;
+  }
+  &.lighten-1 {
+    background-color: lighten($snekBlue, 10%) !important;
+  }
+  &.lighten-2 {
+    background-color: lighten($snekBlue, 20%) !important;
+  }
+  &.lighten-3 {
+    background-color: lighten($snekBlue, 30%) !important;
+  }
+}
+
+.blue-text {
+  color: $snekBlue !important;
+}
+.pink-text {
+  color: #ea4aaa !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.align-self-center {
+  align-self: center !important;
+}
+
+.clickable {
+  cursor: pointer !important;
+}
+
+.splitter {
+  overflow: hidden;
+}
+.or {
+  position: relative !important;
+  padding-bottom: 16px !important;
+  padding-top: 16px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-bottom: var(--spacing-rule-text-vertical, 16px) !important;
+  padding-top: var(--spacing-rule-text-vertical, 16px) !important;
+  padding-left: var(--spacing-rule-text-horizontal, 16px) !important;
+  padding-right: var(--spacing-rule-text-horizontal, 16px) !important;
+}
+.or-text {
+  overflow-wrap: break-word !important;
+  margin: 0px !important;
+  &::before {
+    border-bottom-width: var(--border-rule-border-width, 1px) !important;
+    border-bottom-color: #e4e4e4 !important;
+    content: "" !important;
+    position: absolute !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: rgb(228, 228, 228) !important;
+    top: 50% !important;
+    right: 100% !important;
+    width: 5000px !important;
+  }
+  &::after {
+    border-bottom-width: var(--border-rule-border-width, 1px) !important;
+    border-bottom-color: #e4e4e4 !important;
+    content: "" !important;
+    position: absolute !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: rgb(228, 228, 228) !important;
+    top: 50% !important;
+    left: 100% !important;
+    width: 5000px !important;
+  }
+}
+
+/** 
+ * SPDX-License-Identifier: (EUPL-1.2)
+ * Copyright © Simon Prast
+ */
